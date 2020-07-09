@@ -1,0 +1,32 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Commit
+        run: |
+          git config --global user.email Server@Yojigen.Tech
+          git config --global user.name ServerChan
+          git add .
+          git commit -m "Update" -a
+
+      - name: Build
+        run: |
+          chmod +x Build.sh
+          ./Build.sh
+
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
