@@ -4,5 +4,5 @@ cd YojigenUtils
 chmod +x gradlew
 ./gradlew uploadArchives
 cd ..
-cp -rf YojigenUtils/MavenRepository .
+cp -rf YojigenUtils/MavenRepository/* ./
 rm -rf YojigenUtils
