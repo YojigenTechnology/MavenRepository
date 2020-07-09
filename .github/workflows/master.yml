@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - master
-
+  schedule:
+    - cron: '0/10 * * * *'
+      
 jobs:
   Deploy:
     runs-on: ubuntu-18.04
