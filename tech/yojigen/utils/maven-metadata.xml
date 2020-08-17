@@ -3,7 +3,7 @@
   <groupId>tech.yojigen</groupId>
   <artifactId>utils</artifactId>
   <versioning>
-    <release>202008172035</release>
+    <release>202008172045</release>
     <versions>
       <version>202007101555</version>
       <version>202007101603</version>
@@ -4464,7 +4464,8 @@
       <version>202008171955</version>
       <version>202008172021</version>
       <version>202008172035</version>
+      <version>202008172045</version>
     </versions>
-    <lastUpdated>20200817123542</lastUpdated>
+    <lastUpdated>20200817124520</lastUpdated>
   </versioning>
 </metadata>
